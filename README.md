@@ -1,7 +1,8 @@
 # MBCdeg-paper
 
 This repository contains some code used in the paper "Differential expression analysis using a model-based gene clustering algorithm for RNA-seq data(under review)"
-his folder contains a total of 15 files: 11 R-code files (rcode_*.R), one sample data file (sample.txt), the R-code files for executing the sample file (sample_MBCdeg1.R and sample_MBCdeg2.R), and me. Followings are the details for individual files. You won't get exactly the same results, but you will get similar results. 
+
+this repository contains a total of 15 files: 11 R-code files (rcode_*.R), one sample data file (sample.txt), the R-code files for executing the sample file (sample_MBCdeg1.R and sample_MBCdeg2.R), and me. Followings are the details for individual files. You won't get exactly the same results, but you will get similar results. 
 
 ###  rcode_fig1.R  ###
 By executing this file with the default parameter settings (i.e., 100 trials, G = 10,000, n1 = n2 = 3, PDEG = 0.05, P1 = 0.5, FC = 4, and K = 3), one can obtain a tab-delimited file (named "Fig1_0.05_0.5_3_fixed.txt") that contains raw AUC values of five methods for individual trials under PDEG = 0.05 and P1 = 0.5 in Figure 1. One can obtain all the raw AUC values in this figure by changing the two parameters (i.e., PDEG and P1). One can also obtain the raw AUC values in Additional file 1 by changing the four parameters (n1, n2, PDEG, and P1).
