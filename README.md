@@ -2,7 +2,9 @@
 
 This repository contains some code used in the paper "Differential expression analysis using a model-based gene clustering algorithm for RNA-seq data(under review)"
 
-this repository contains a total of 15 files: 11 R-code files (rcode_*.R), one sample data file (sample.txt), the R-code files for executing the sample file (sample_MBCdeg1.R and sample_MBCdeg2.R), and me. Followings are the details for individual files. You won't get exactly the same results, but you will get similar results. 
+This repository contains a total of 16 files: 12 R-code files (*.R), one sample data file (sample.txt), the R-code files for executing the sample file (sample_MBCdeg1.R and sample_MBCdeg2.R), and me. Followings are the details for individual files. You won't get exactly the same results, but you will get similar results. 
+
+![](method_description.svg)
 
 ###  MBCdeg.R  ###
 This file contains MBCdeg function which execute MBCdeg procedure.
