@@ -7,7 +7,18 @@ This repository contains a total of 16 files: 12 R-code files (*.R), one sample 
 ![](method_description.svg)
 
 ###  MBCdeg.R  ###
-This file contains MBCdeg function which execute MBCdeg procedure.
+This file contains MBCdeg function which execute MBCdeg procedure. This function dependent `MBCluster.Seq` packages.
+
+Usage:
+
+```r
+source("MBCdeg.R")
+count_matrix <- read.table("sample.txt")
+treatment <- data.cl <- c(rep(1, 5), rep(2, 6))
+no_clusters <- 3
+result <- MBCdeg(counts = count_matrix, treatment = treatment, K = no_clusters)
+print(result)
+```
 
 ###  rcode_fig1.R  ###
 By executing this file with the default parameter settings (i.e., 100 trials, G = 10,000, n1 = n2 = 3, PDEG = 0.05, P1 = 0.5, FC = 4, and K = 3), one can obtain a tab-delimited file (named "Fig1_0.05_0.5_3_fixed.txt") that contains raw AUC values of five methods for individual trials under PDEG = 0.05 and P1 = 0.5 in Figure 1. One can obtain all the raw AUC values in this figure by changing the two parameters (i.e., PDEG and P1). One can also obtain the raw AUC values in Additional file 1 by changing the four parameters (n1, n2, PDEG, and P1).
