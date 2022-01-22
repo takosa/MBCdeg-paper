@@ -28,7 +28,7 @@ ef.libsizes <- colSums(data)*norm.factors
 size.factors <- ef.libsizes/mean(ef.libsizes)
 
 ###  MBCdeg2 (main)  ###
-hoge <- RNASeq.Data(data, Normalizer=log2(size.factors),
+hoge <- RNASeq.Data(data, Normalizer=log(size.factors),
            Treatment=data.cl, GeneID=rownames(data))
 c0 <- KmeansPlus.RNASeq(data=hoge, nK=K,
            model="nbinom", print.steps=F)

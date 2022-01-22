@@ -200,7 +200,7 @@ colnames(result) <- c("(c) MBCdeg1(K=5)", "#Genes", "Cluster centers",
 result_MBCdeg1_5 <- result
 
 ###  MBCdeg2 (preparation)  ###
-hoge <- RNASeq.Data(data, Normalizer=log2(size.factors),
+hoge <- RNASeq.Data(data, Normalizer=log(size.factors),
            Treatment=data.cl, GeneID=rownames(data))
 
 ###  MBCdeg2 (K=3)  ###

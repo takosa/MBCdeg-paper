@@ -114,7 +114,7 @@ res_table_MBCdeg1 <- res_table
 k_MBCdeg1 <- k
 
 ###  MBCdeg2  ###
-hoge <- RNASeq.Data(data, Normalizer=log2(size.factors),
+hoge <- RNASeq.Data(data, Normalizer=log(size.factors),
            Treatment=data.cl, GeneID=rownames(data))
 c0 <- KmeansPlus.RNASeq(data=hoge, nK=K,
            model="nbinom", print.steps=F)

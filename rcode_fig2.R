@@ -101,7 +101,7 @@ auc <- AUC(rocdemo.sca(truth=obj, data=-ranking))
 auc_MBCdeg1_4 <- auc
 
 ###  MBCdeg2 (preparation)  ###
-hoge <- RNASeq.Data(data, Normalizer=log2(size.factors),
+hoge <- RNASeq.Data(data, Normalizer=log(size.factors),
            Treatment=data.cl, GeneID=rownames(data))
 
 ###  MBCdeg2 (K=2)  ###
